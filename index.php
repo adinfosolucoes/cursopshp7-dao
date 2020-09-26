@@ -30,4 +30,21 @@
 
 	echo $usuario;
 
+	echo "<hr/>";
+
+	$aluno = new Usuario();
+
+	$aluno->setDeslogin("aluno2");
+	$aluno->setDessenha("aluno2020");
+
+	$aluno->insert();
+
+	echo $aluno;
+
+	echo "<hr/>";
+
+	$usuario = new Usuario();
+	$usuario->loadById(4);
+
+	$usuario->update("professor", "prof2020");
 ?>
