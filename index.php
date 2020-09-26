@@ -26,7 +26,7 @@
 
 	$usuario = new usuario();
 
-	$usuario->login("Fernanda", "amorekito06");
+	$usuario->login("daniel", "123456");
 
 	echo $usuario;
 
