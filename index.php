@@ -2,6 +2,8 @@
 
 	require_once("config.php");
 
+	/*
+
 	$root = new usuario();
 
 	$root->loadById(1);
@@ -47,4 +49,15 @@
 	$usuario->loadById(4);
 
 	$usuario->update("professor", "prof2020");
+
+	*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(6);
+
+$usuario->delete();
+
+echo $usuario;
+
 ?>
